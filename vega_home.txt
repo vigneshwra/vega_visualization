@@ -1,0 +1,389 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+   font: 16px/1.5em "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: #373a3c;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+    min-width: 360px;
+}
+.hljs {
+    padding: 0;
+    background-color: transparent;
+}
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #333;
+    background: #f8f8f8;
+}
+.hljs-string, .hljs-doctag {
+    color: #d14;
+}
+code, tt {
+    margin: 0 2px;
+    padding: 0 4px;
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    font-family: monospace;
+    font-size: 0.8em;
+}
+code {
+    font-family: monospace;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+hr {
+border-color: gray;
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-fixed-top" style="background-color:white">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>  
+    
+	
+    <ul class="nav navbar-nav">
+	
+
+		
+		
+      <li><h1 style="color:purple; margin:7px 0 0 20px"><a href="#" class="active" style="text-decoration:none;color:purple"><strong>Vega</strong></a></h1></li>
+	  
+	  <li style="margin:10px 0 0 20px"><h4><a href="https://vega.github.io/vega/" style="text-decoration:none"><strong>Overview</strong></a><h3></li>
+      <li style="margin:10px 0 0 20px"><h4><a href="https://vega.github.io/vega/examples/" style="text-decoration:none"><strong>Examples</strong></a></h4></li>
+      <li style="margin:10px 0 0 20px"><h4><a href="https://vega.github.io/vega/tutorials/" style="text-decoration:none"><strong>Tutorial</strong></a></h4></li>
+      <li style="margin:10px 0 0 20px"><h4><a href="https://vega.github.io/vega/docs/" style="text-decoration:none"><strong>Documentation</strong></a></h4></li>
+	  <li style="margin:10px 0 0 20px"><h4><a href="https://vega.github.io/vega/usage/" style="text-decoration:none"><strong>API</strong></a></h4></li>
+	  <li style="margin:10px 0 0 20px"><h4><a href="https://github.com/vega/vega" style="text-decoration:none"><strong>Github</strong></a><h3></li>
+	</ul>
+	
+	
+	<ul class="nav navbar-nav navbar-right"> 
+	
+     
+          <li style="margin:9px 0 0 0px"><h4><a href="https://github.com/join?source=prompt-code" style="text-decoration:none"><span class="glyphicon glyphicon-user"></span><strong> Sign Up</strong></a></h4></li>
+      <li style="margin:9px 30px 0 20px"><h4><a href="https://github.com/login?return_to=%2Fjoin%3Fsource%3Dprompt-code" style="text-decoration:none"><span class="glyphicon glyphicon-log-in"></span><strong> Login</strong></a></h4></li>
+	</ul>
+	
+  </div>
+  </div>
+ 
+</nav>
+
+
+
+<div class="container">
+<br><br>
+<h2 style="color:purple;font-size:60px" class="text-responsive text-center"><strong>Vega - <span style="color:black;font-size:30px" class="text-center">A Visualization Grammar</span></strong></h2>
+<br>
+</div>
+<div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+   
+   <div class="carousel-inner">
+
+      <div class="item active">
+        
+        <img src="https://images.martechadvisor.com/images/uploads/content_images/analytics_data_5aab6b8853cee.jpg" style="width:100%;height:80%;background-size:cover">
+      </div>
+
+      <div class="item">
+        <img src="http://verveindustrial.com/wp-content/uploads/2017/10/kaspersky-real-time-map.png" style="width:100%;height:80%;background-size:cover">
+      </div>
+    
+      <div class="item">
+		<img src="https://www.einfochips.com/blog/wp-content/uploads/2019/02/best-business-intelligence-and-data-visualization-tools-for-2019-featured.jpg" style="width:100%;height:80%;background-size:cover">
+        <div class="carousel-caption"> 
+	  </div>
+  
+    </div>
+
+    
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+	
+	
+	
+
+  
+  </div>
+</div>
+
+
+<div class="container text-justify col-lg-8" style="margin:10px;">
+
+<span style="font-size:18px"><b>Vega</b> is a <i>visualization grammar</i>, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.</span><br><br>
+
+<span class="lead-columns">
+<span>Vega provides basic building blocks for a wide variety of visualization designs: <span class="text-primary"> data loading and transformation, scales, map projections, axes, legends, and graphical marks</span> such as rectangles, lines, plotting symbols, etc. Interaction techniques can be specified using reactive signals that dynamically modify a visualization in response to input event streams.</span>
+
+<h3 style="color:purple"><strong>Vega-Lite</strong></h3>
+<span style="font-size:18px"><b>Vega-Lite</b> is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.</span>
+<br><br>
+<span class="lead-columns">
+<span>Vega-Lite specifications describe visualizations as mappings from data to <b> properties of graphical marks</b> (e.g., points or bars). The Vega-Lite compiler <b>automatically produces visualization components</b> including axes, legends, and scales. It then determines properties of these components based on a set of <b>carefully designed rules</b>. This approach allows specifications to be succinct and expressive, but also provide user control. As Vega-Lite is designed for analysis, it supports <b>data transformations</b> such as aggregation, binning, filtering, sorting, and <b>visual transformations</b> including stacking and faceting. Moreover, Vega-Lite specifications can be <b>composed</b> into layered and multi-view displays, and made <b>interactive with selections</b>.
+
+
+<a href="https://vega.github.io/vega-lite/">Read our..</a>
+</span></span>
+
+<h3 style="color:purple"><strong>Example</strong></h3>
+
+<span class="lead-columns">
+<span>With Vega-Lite, we can start with <b>a bar chart of the average monthly precipitation in Seattle</b>, overlay a rule for the overall yearly average, and have it represent an <b>interactive moving average for a dragged region.</b></span></span>
+<br><br>
+<img class="col-md-6" src="https://www.researchgate.net/profile/Deepak_Upadhya/publication/262144281/figure/fig3/AS:669618423218176@1536660881068/Shifts-and-variation-in-monthly-maximum-average-temperature-in-Ludhiana-district-of.png">
+
+
+
+<code class="json hljs col-md-5">{
+  <span class="hljs-attr"><br>
+  "data"</span>: {<span class="hljs-attr">"url"</span>: <span class="hljs-string">"data/seattle-weather.csv"</span>},
+  <br><span class="hljs-attr">"mark"</span>: <span class="hljs-string">"bar"</span>,
+  <br><span class="hljs-attr">"encoding"</span>: {
+    <br><span class="hljs-attr" style="margin:0 0 0 10px">"x"</span>: {
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"timeUnit"</span>: <span class="hljs-string">"month"</span>,
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"field"</span>: <span class="hljs-string">"date"</span>,
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"type"</span>: <span class="hljs-string">"ordinal"</span>
+    <br><span style="margin:0 0 0 10px">},</span>
+    <br><span class="hljs-attr" style="margin:0 0 0 10px">"y"</span>: {
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"aggregate"</span>: <span class="hljs-string">"mean"</span>,
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"field"</span>: <span class="hljs-string">"precipitation"</span>,
+      <br><span class="hljs-attr" style="margin:0 0 0 20px">"type"</span>: <span class="hljs-string">"quantitative"</span>
+    <br><span style="margin:0 0 0 10px">}</span>
+  <br><span style="margin:0 0 0 5px">}</span>
+<br>}
+</code>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container text-justify col-lg-3" style="margin:50px;">
+ <div class="blogShort">
+                     <h1 style="text-center"><strong>Blogs</strong></h1>
+					 
+					 
+					 
+					 <div class="container-fluid">
+					<h4 class="text-justify" style="color:purple"> <strong><i>Counting and illustrating Game of Thrones deaths</i></strong></h4>
+
+					<img src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2019/04/Game-of-Thrones-deaths.png?fit=1200%2C649&ssl=1&w=640" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+					
+					<div class="panel-group">					
+					<div class="panel panel-primary" style="color:white;background-color:navy	">
+
+                     
+                     
+                     <article class="panel-body" ><p class="text-justify">
+						
+						<br>Shelly Tan, for The Washington Post, has been counting on-screen deaths in Game of Thrones over the past few years. As the season ended, Tan described her process in an entertaining Twitter thread:</p>
+						<p class="text-justify">
+
+This graphic had a lot of numbers, so here are the final ones:
+<br>
+<ul>
+<li>5 years of working on this project</li>
+<li>6887 deaths</li>
+<li>290 character illustrations</li>
+</ul>
+
+And now, at the end of it all, my watch has finally ended. <a href="https://flowingdata.com/2019/05/23/counting-and-illustrating-game-of-thrones-deaths/"><code class="text-primary">Read More..
+</code></a>
+ 
+                 </p></article>
+				 </div>
+
+                 
+          
+                 <br>
+               
+			   <div class="col-md-12 gap10 text-center" ><strong><a href="https://www.feedspot.com/infiniterss.php?q=site:http%3A%2F%2Fflowingdata.com%2Ffeed%2F" style="color:red"><br><i>For More Blogs..</i></a></strong></div><hr>
+             </div>
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="container col-md-8 text-justify" style="margin:30px">
+<h3 style="color:purple"><strong>Interactive data visualization</strong></h3>
+<h4 style="color:purple"><strong>Brushing:</strong></h4>
+
+<span class="lead-columns" style="color:black">
+<span>It works by using the mouse to control a paintbrush, directly changing the color or glyph of elements of a plot. The paintbrush is sometimes a pointer and sometimes works by drawing an outline of sorts around points; the outline is sometimes irregularly shaped, like a lasso. Brushing is most commonly used when multiple plots are visible and some linking mechanism exists between the plots. There are several different conceptual models for brushing and a number of common linking mechanisms. Brushing scatterplots can be a transient operation, in which points in the active plot only retain their new characteristics while they are enclosed or intersected by the brush, or it can be a persistent operation, so that points retain their new appearance after the brush has been moved away. Transient brushing is usually chosen for linked brushing, as we have just described.
+</span></span>
+
+<h4 style="color:purple"><strong>Painting:</strong></h4>
+
+<span class="lead-columns" style="color:black">
+<span>Persistent brushing is useful when we want to group the points into clusters and then proceed to use other operations, such as the tour, to compare the groups. It is becoming common terminology to call the persistent operation painting.
+</span></span>
+
+<h4 style="color:purple"><strong>Identification:</strong></h4>
+
+<span class="lead-columns" style="color:black">
+<span>It which could also be called labeling or label brushing,is another plot manipulation that can be linked. Bringing the cursor near a point or edge in a scatterplot, or a bar in a barchart, causes a label to appear that identifies the plot element. It is widely available in many interactive graphics, and is sometimes called mouseover.
+</span></span>
+
+<h4 style="color:purple"><strong>Scaling:</strong></h4>
+
+<span class="lead-columns" style="color:black">
+<span>It maps the data onto the window, and changes in that mapping function help us learn different things from the same plot. Scaling is commonly used to zoom in on crowded regions of a scatterplot, and it can also be used to change the aspect ratio of a plot, to reveal different features of the data.
+</span></span>
+
+<h4 style="color:purple"><strong>Linking:</strong></h4>
+
+<span class="lead-columns" style="color:black">
+<span>It connects elements selected in one plot with elements in another plot. The simplest kind of linking, one-to-one, where both plots show different projections of the same data, and a point in one plot corresponds to exactly one point in the other. When using area plots, brushing any part of an area has the same effect as brushing it all and is equivalent to selecting all cases in the corresponding category. Even when some plot elements represent more than one case, the underlying linking rule still links one case in one plot to the same case in other plots. Linking can also be by categorical variable, such as by a subject id, so that all data values corresponding to that subject are highlighted, in all the visible plots.
+</span></span>
+
+
+
+</div>
+
+
+<div class="col-md-3" style="margin:50px 0 0 10px">
+<hr>
+  <h1 style="text-center"><strong><i>Recent Trends in Visualization</i></strong></h1>
+  <hr>
+  <h4><a href="https://flowingdata.com/2019/05/23/process-41/"><i>Setting Visualization Expectations to Avoid Audience Confusion (The Process #41)</i></a></h4><hr>
+<h4><a href="https://flowingdata.com/2019/05/16/process-40/"><i>Making Comparisons Easier When Presenting Data (The Process #40)</i></a></h4><hr>
+<h4><a href="https://flowingdata.com/2019/05/09/process-39/"><i>Line Chart Baselines Do Not Have to Start at Zero (The Process #39)</i></a></h4><hr>
+<h4><a href="https://flowingdata.com/2019/05/02/process-38/"><i>Axis Labels, Better Than Defaults (The Process #38)</i></a></h4><hr>
+<h4><a href="https://flowingdata.com/2019/04/25/process-37/"><i>Visualization Tools and Resources, April 2019 Roundup; Visualize This Reboot</i></a></h4><hr>
+			   			   <div class="col-md-12 gap10 text-center" ><strong><a href="https://carto.com/blog/top-trends-data-visualization-2018/" style="color:red"><br><i>Follow More Trends..</i></a></strong></div><hr>
+
+</div>
+</div>
+
+<div class="container">
+<hr>
+<h2 style="color:purple" class="text-center"><strong>Introduction to Vega</strong></h2><br>
+
+<iframe width="1060" height="496" src="https://www.youtube.com/embed/rydth27fB3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="container">
+<hr>
+<h2 style="color:purple" class="text-center"><strong>Related Articles</strong></h2><br>
+<div class="col-md-3 container">
+<a href="https://datavizproject.com/" style="text-decoration:none">
+<img src="https://carto.com/blog/img/posts/2017/2017-10-17-top-trends-data-visualization-2018/ferdio-data-viz.png" style="height:20%;width:100%" class="pull-left img-responsive thumb margin10 img-thumbnail">
+<h3 style="color:black"><strong><i>Data visualization is not just for data scientists anymore</i></strong></h3>
+<span class="text-justify"><i>IBM projects a 39% increase in demand for data scientists and data engineers over the next three years. But employers are coming to expect a familiarity and comfort with data across their organizations, not just from their scientists and engineers.
+Because of this trend..<a href="https://datavizproject.com/">Read More..</a></i></span></a>
+</div>
+<div class="col-md-3 container">
+<a href="https://public.carto.com/me" style="text-decoration:none">
+<img src="https://cartocdn-gusc-a.global.ssl.fastly.net/public/api/v1/map/public@ffa7e839@21eaa312426c3b10fe5cd581dfe7d216:1531760718491/2/3/4/4.png" style="height:20%;width:100%" class="pull-left img-responsive thumb margin10 img-thumbnail" >
+<br><h3 style="color:black"><strong><i>The increase of both open and private data helps enrich data visualizations</i></strong></h3>
+<span class="text-justify"><i>Data.gov, the United States Federal Government’s open data site, boasts data sets from 43 US states, 47 cities and counties and 53 other nations. In June, Forbes identified 85 US cities that have their own data portals.
+We recently published a..<a href="https://public.carto.com/me">Read More..</a></i></span></a>
+</div>
+<div class="col-md-3 container" >
+<a href="https://einstein.ai/" style="text-decoration:none"	>
+<img src="https://carto.com/blog/img/posts/2017/2017-10-17-top-trends-data-visualization-2018/einstein-ai.png" class="pull-left img-responsive thumb margin10 img-thumbnail" style="height:20%;width:100%">
+<br><h3 style="color:black"><strong><i>Artificial Intelligence and Machine Learning allows data professionals to work smarter not harder</strong></h3>
+<span class="text-justify">Salesforce has certainly highlighted their use, advertising their Einstein AI, which will aid users in discovering patterns in their data..
+<a href="https://einstein.ai/">Read More..</a></i></span>
+</a>
+</div>
+<div class="col-md-3 container">
+<a href="https://carto.com/carto-colors/" style="text-decoration:none">
+<img src="https://carto.com/blog/img/posts/2017/2017-10-17-top-trends-data-visualization-2018/carto-colors.png" class="pull-left img-responsive thumb margin10 img-thumbnail" style="height:20%;width:100%"/>
+<br><h3 style="color:black"><strong><i>New color schemes and palettes for visually impaired</i></strong></h3>
+<span class="text-justify"><i>Regardless of trends, it’s important to understand the fundamentals of choosing color palettes for your data visualization. Once you understand the fundamentals, you can start exploring other palette options and incorporating design trends. Check out Invision’s post on Finding The Right Color Palletes for Data Visualizations.
+<a href="https://carto.com/carto-colors/">Read More..</a></i></span>
+</a>
+</div>
+<div class="col-md-12 gap10 text-center" ><strong><a href="https://iotechnologies.com/blog/data-visualization-trends?" style="color:red"><br><i>Let us Know More..</i></a></strong></div><hr>
+</div>
+
+
+<div id="footer">
+<div class="text-center container">
+<hr>
+<div class="container col-md-4"><a href="https://twitter.com/flowingdata" style="text-decoration:none" target="_blank">Twitter</a></div>
+<div class="container col-md-4"><a href="https://eepurl.com/icL0o" style="text-decoration:none" target="_blank">Newsletter</a></div>
+<div class="container col-md-4"><a href="https://flowingdata.com/feed" style="text-decoration:none" target="_blank">RSS</a></div>
+<br>
+
+</div>
+</div>
+
+<div class="container">
+<br>
+<div id="bottom" class="text-center"><i>Copyright © 2019-Present Vega Visualization. All rights reserved.</i></div>
+<br>
+</div>
+</body>
+</html>
